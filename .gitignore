@@ -1,36 +1,27 @@
-# Arquivos Python compilados e cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Ambientes virtuais
 venv/
 ENV/
 env/
 
-# Distribuição e pacotes
 build/
 dist/
 *.egg-info/
 
-# Arquivos de log
 *.log
 
-# Arquivos de configuração de IDEs e editores
 .vscode/
 .idea/
 
-# Arquivos do sistema (macOS, etc.)
 .DS_Store
 
-# Arquivos do Docker
 docker/.dockerignore
 
-# Terraform
 .terraform/
 terraform.tfstate
 terraform.tfstate.backup
 *.tfplan
 
-# Ansible cache ou logs (se houver)
 *.retry
