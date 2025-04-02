@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build da imagem
-        run: docker build -t rodbitu/my-app:latest docker/
+        run: docker build -t rodbitu/my-app:latest .
 
       - name: Push da imagem
         run: docker push rodbitu/my-app:latest
