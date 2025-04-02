@@ -1,0 +1,7 @@
+# Ignora arquivos e pastas desnecessárias
+.git
+.gitignore
+__pycache__
+*.pyc
+.env
+venv

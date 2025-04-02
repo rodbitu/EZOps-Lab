@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: docker.io/rodbitu/my-app:latest
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              cpu: "100m" # Minimum guaranteed CPU (0.1 of a CPU core)
+              memory: "128Mi" # Minimum guaranteed memory
+            limits:
+              cpu: "250m" # Maximum CPU allowed (0.25 of a CPU core)
+              memory: "256Mi" # Maximum memory allowed
